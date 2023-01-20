@@ -1,3 +1,3 @@
 # demo
-page d'accueil de Baron Consulting
+page d'accueil de Baro Consulting
 
