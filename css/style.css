@@ -13,6 +13,11 @@ font-family: "Montserrat", sans-serif;
 #blur{
   margin-top: 15px;
 }
+
+/*=======================================================
+      HEADER
+========================================================*/
+
 #particles-js{
   background-color: rgb(110, 25, 25);
   width: 100%;
@@ -25,9 +30,9 @@ font-family: "Montserrat", sans-serif;
   top: -20px;
 }
 
-/*=======================================================
-      HEADER
-========================================================*/
+
+/*----nav bar -----*/
+
 
 header {
   width: 100%;
@@ -657,22 +662,6 @@ header .navbar li .lien i{
   background-color: rgba(33, 33, 34, 0.5) !important;
 }
 
-.lien{
-  color: red;
-  text-decoration: none;
-  border-bottom: 5px solid black;
-  vertical-align: right;
-  margin-left: 70px;
-  font-weight: bolder;
-  padding: 10px;
-  transition: all 0.4s;
-  z-index: 3;
-
-  }
-  .lien:hover{color: black;
-    border-bottom: 5px solid red;
-  }
-  
 /*--- Baro consulting text ----------------*/
 /*----- Baro consulting text ----------------*/
 
@@ -686,8 +675,8 @@ header article{
   position: relative;
   font-weight: 700!important;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 3px rgb(0, 0, 0);
-  -webkit-text-stroke-color: rgb(17, 17, 14);
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  -webkit-text-stroke-color: rgb(0,0,0);
   z-index: 4;
 }
 
@@ -762,8 +751,70 @@ height: 100%!important;
 }
 .loloa:hover{color: black!important;}
 
-/*------------------------ services --------------------------------------*/
-/*------------------------ services --------------------------------------*/
+
+/*=======================================================
+      QUI SOMMES NOUS
+========================================================*/
+
+.article_QSN{
+  padding: 15px;
+  background-color: rgb(110, 25, 25);
+  color: black;
+  font-size: 16px;
+}
+.titre_QSN{
+  font-size: 3em;
+  font-weight: 700!important;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  -webkit-text-stroke-color: rgb(0,0,0);
+
+}
+.article_QSN .container{
+  max-height: 400px;
+}
+.bar1 {
+    position: relative;
+    top: -220px;
+    left: 640px;
+    width: 300px;
+    height: 280px;
+    background-image: url('../img/woman-868521_640.jpg');
+    border-radius: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(-10deg);
+    z-index: 2;
+    border: 1px solid black;
+  }
+.bar2 {
+  outline: none;
+    position: relative;
+    top: -725px;
+    left: 500px;
+    width: 300px;
+    height: 280px;
+    background-image:url('../img/about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 200px;
+    transform: rotate(10deg);
+    z-index: 3;
+  }
+.bar3 {
+    position: relative;
+    top: -860px;
+    left: 400px;
+    width: 530px;
+    height: 250px;
+    background-color: black;
+    border-radius: 200px;
+    transform: rotate(-120deg);
+    z-index: 1;
+}
+/*=======================================================
+      SERVICE
+========================================================*/
 
 
 #services
@@ -1230,50 +1281,3 @@ main#blur.active{
     padding: 8px;
     font-size: 15px;
   }
-.open{
-  width: 0px;
-  height: 0px;
-  margin: 1px !important;
-  display: flex;
-  border:1px solid black;
-
-}
-.bar1 {
-    position: relative;
-    top: -200px;
-    left: 740px;
-    width: 130px;
-    height: 280px;
-    background-image: url('../img/woman-868521_640.jpg');
-    border-radius: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transform: rotate(-10deg);
-    z-index: 2;
-    border: 1px solid black;
-  }
-.bar2 {
-  outline: none;
-    position: relative;
-    top: -725px;
-    left: 700px;
-    width: 130px;
-    height: 280px;
-    background-image:url('../img/about.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 200px;
-    transform: rotate(10deg);
-    z-index: 3;
-  }
-.bar3 {
-    position: relative;
-    top: -850px;
-    left: 650px;
-    width: 450px;
-    height: 250px;
-    background-color: black;
-    border-radius: 200px;
-    transform: rotate(-10deg);
-    z-index: 1;
-}
