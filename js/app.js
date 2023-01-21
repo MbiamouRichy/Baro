@@ -16,7 +16,7 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 150,
         "density": {
           "enable": true,
           "value_area": 800
@@ -124,7 +124,7 @@ particlesJS('particles-js',
       "hide_card": false,
       "background_color": "#b61924",
       "background_image": "",
-      "background_position": "50% 50%",
+      "background_position": "center",
       "background_repeat": "no-repeat",
       "background_size": "cover"
     }

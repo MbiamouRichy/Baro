@@ -6,53 +6,63 @@
   <link rel="shortcut icon" href = "img/mini logo.png" type="images/png">
   <link rel="stylesheet" href="css/adminlte.min.css">
   <link rel="stylesheet"  href="css/style.css">
-  <link rel="stylesheet" href="font-awesome/css/all.css">
+  <link rel="stylesheet" href="fontawesome-free/css/all.css">
  
 </head>
 <body>
   <main id="blur">
-    <div id="particles-js" class="container-fluid w-100" style="position: relative;">
-    <div class="container row "  style="background-color: rgba(240, 221, 221, 0.0);margin-top: 20px; position:absolute;margin: 0 auto;">
-      <div class="col  col-lg-7 col-md-2 col-sm-6 col-xs-12 text-center" ><img class="logo" src="img/c.png" alt="logo"></div>
-      <div class="col col-lg-4 col-md-9 col-sm-6 col-xs-12 text-center "><a class="lien" href="#"> NOUS TROUVER</a></div>
-     <div class = "col-lg-1 col-md-1 col-sm-12">
-      <div class="search-box ">
-        <input class="search-txt" type="text" placeholder="Type of search">
-        <a href="#" class="search-btn">
-            <i class="fa fa-search"></i>
-        </a>
-      </div>
-    </div>
-    </div>
-<!---------------------################# Barre de navigation##########################--------------------- -->
-
-  <nav style="z-index: 10;" id="navbar" class="navbar navbar-expand-lg container-fluid  nav-pills " >
-    <div class="container-fluid"  style="height: 70px; background-color: rgba(2, 1, 1, 0);margin: 0 auto;">
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        <span class="toggler-icon top-bar"><!--<i class="fa fa-navicon fa-2x" style="height: 10px;"></i>--></span>
-        <span class="toggler-icon middle-bar"></span>
-        <span class="toggler-icon bottom-bar"></span>
-     </button>
-      <ul class="collapse navbar-collapse   justify-content-center lp" id="collapseExample" > 
-        <li class="navbar-nav mn" style="background-color: rgba(2, 1, 1, 0);" ><a class="nav-link " aria-current="page" href="#a_propos">ACCUEIL</a></li>
-        <li class="navbar-nav  mn" style="background-color: rgba(2, 1, 1, 0);"><a class="nav-link "href="#COMPETENCE">ACTUALITE</a></li>
-        <li class="navbar-nav mn" style="background-color: rgba(2, 1, 1, 0);"><a class="nav-link "href="#EXPERIENCE">DECOUVREZ-NOUS</a></li>
-        <li class="navbar-nav mn" style="background-color: rgba(2, 1, 1, 0);"><a class="nav-link " href="#EDUCATION">CONTACT</a></li>
-        <li class="navbar-nav mn" style="background-color: rgba(2, 1, 1, 0);"><a class="nav-link " href="#PORTFOLIO">CARRIERE</a></li> 
-      </ul>
-    </div>
-  </nav>
-<article class="container-fluid "  style="background-color: rgba(2, 1, 1, 0);position: absolute; margin: 0 auto;margin-top: 150px;">
-  <div style="background-color: rgba(240, 221, 221,0);display: flex;">
-    <p class="lop" style="font-size:clamp(4em,5em,7em); background-color: rgba (3, 3, 3,0) ; color: black;"><span>BARO</span> <br> <span>CONSULTING</span></p>
-   </div>
-   <div class=" duallien" style="width:30em;position: sticky;">
-   <a class=" loloa  text-center"  href="#">NOUS DECOUVRIR</a>
-   <span class=" text-center">ou</span>
-  <a class=" lolob  text-center"  href="#">NOUS CONTACTER </a>
-  </div>
-</article>
-</div>
+      <header id="particles-js">
+          <div class="container">
+         <div class="container logo-div">
+           <a class="navbar-brand" id="logo-text" href="#"> 
+              <div class="logo"> 
+               <img class="img-responsive img-fluid" src="img/c.png" id="logo_dpg" alt="logo">
+              </div>
+            </a>
+            <div class="head-info">
+              <div class="search-box">
+                <input class="search-txt" type="text" placeholder="Type of search">
+                <a href="#" class="search-btn">
+                    <i class="fa fa-search"></i>
+                </a>
+              </div>
+              <ul>
+                <li> <i class="fa fa-phone"></i>
+                  <p>+237 655 794 769</p>
+                </li>
+                <li> <i class="fa fa-map-marker"></i>
+                  <p>Port Gentil, GABON Libreville</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </div>
+          <nav class="navbar navbar-expand-md">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#da-navbarNav" aria-controls="da-navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+              </button>
+             <div class="collapse navbar-collapse text-uppercase" id="da-navbarNav">
+               <ul class="navbar-nav m-auto">
+                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#services">Service</a></li>
+                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#projects">Projet</a></li>
+                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#gallery">Gallerie</a></li>
+                 <li class="nav-item"><a class="nav-link  smooth-scroll" href="#contact">Contact</a></li>
+               </ul>
+             </div>
+          </nav>
+          <article class="container">
+                <h1 class="header_text">
+                  BARO<br>CONSULTING
+                </h1>
+             <div class="duallien">
+               <a class=" loloa  text-center"  href="#">NOUS DECOUVRIR</a>
+                 <span class=" text-center">ou</span>
+               <a class=" lolob  text-center"  href="#">NOUS CONTACTER </a>
+             </div>
+          </article>
+       </header>
 
 <!------####################### Boutton scroll top ###############################--------->
 
@@ -249,7 +259,7 @@
 
 <!-----------------------------------------------################# venez 'fleurir' 'grandir'###############################------------------------------------------------->
 
-<article class="venez-avec-nous" style="height: 250px;" >
+<article class="venez-avec-nous">
   <div class="container texte-center  h-100">
     <div class="container h-100 ">
       <div class="w-100  text-center" >
