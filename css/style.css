@@ -5,10 +5,14 @@
 }
 body{
 background-color: rgb(110, 25, 25)!important;
-font-weight: bolder!important;
-font-size: medium!important;
 overflow-x: hidden;
 font-family: "Montserrat", sans-serif;
+}
+h1, h2{
+  font-weight: 700!important;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  -webkit-text-stroke-color: rgb(0,0,0);
 }
 #blur{
   margin-top: 15px;
@@ -601,14 +605,14 @@ header .navbar li .lien i{
 
 }
 
-.nav-link{
+header .nav-link{
   font-weight: bolder!important;
   color: black!important;
   font-size: medium!important;
   z-index: 3;
 
 }
-.nav-link:hover{
+header .nav-link:hover{
   color: black!important;
   transform: rotate(8deg)!important;
    -moz-transform: rotate(8deg)!important;
@@ -673,11 +677,7 @@ header article{
   color: black;
   font-size: 5em;
   position: relative;
-  font-weight: 700!important;
-  -webkit-text-fill-color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 2px rgb(0, 0, 0);
-  -webkit-text-stroke-color: rgb(0,0,0);
-  z-index: 4;
+   z-index: 4;
 }
 
 .duallien{
@@ -757,27 +757,23 @@ height: 100%!important;
 ========================================================*/
 
 .article_QSN{
-  padding: 15px;
+  padding: 20px;
   background-color: rgb(110, 25, 25);
   color: black;
   font-size: 16px;
 }
 .titre_QSN{
   font-size: 3em;
-  font-weight: 700!important;
-  -webkit-text-fill-color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 2px rgb(0, 0, 0);
-  -webkit-text-stroke-color: rgb(0,0,0);
-
+  text-transform: uppercase;
 }
 .article_QSN .container{
-  max-height: 400px;
+  max-height: 450px;
 }
 .bar1 {
     position: relative;
-    top: -220px;
-    left: 640px;
-    width: 300px;
+    top: -180px;
+    left: 680px;
+    width: 270px;
     height: 280px;
     background-image: url('../img/woman-868521_640.jpg');
     border-radius: 200px;
@@ -790,9 +786,9 @@ height: 100%!important;
 .bar2 {
   outline: none;
     position: relative;
-    top: -725px;
-    left: 500px;
-    width: 300px;
+    top: -685px;
+    left: 540px;
+    width: 270px;
     height: 280px;
     background-image:url('../img/about.jpg');
     background-repeat: no-repeat;
@@ -803,17 +799,46 @@ height: 100%!important;
   }
 .bar3 {
     position: relative;
-    top: -860px;
-    left: 400px;
-    width: 530px;
-    height: 250px;
+    top: -790px;
+    left: 440px;
+    width: 500px;
+    height: 190px;
     background-color: black;
     border-radius: 200px;
     transform: rotate(-120deg);
     z-index: 1;
 }
+
+
 /*=======================================================
       SERVICE
+========================================================*/
+#service{
+  margin-top: 10px;
+  padding: 20px 0;
+}
+#service1 h2{
+  font-size: 3em;
+}
+.card-dark, #service1 .nav-item{
+  background-color: transparent;
+  color: black;
+}
+
+#service1 .nav-link{
+  color: black;
+  border-bottom-color: black;
+}
+#service1 .nav-link:hover{
+  border: 1px solid black;
+}
+#service1 .nav-link.active{
+  color: red;
+  background-color: black;
+  border-color: black;
+}
+/*=======================================================
+      REALISATION
 ========================================================*/
 
 
@@ -827,12 +852,10 @@ height: 100%!important;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-#services h1
+#services h2
 {
-    text-align: center;
-    color: red !important;
-    padding-bottom: 10px;
-
+ font-size: 3em;
+ text-align: center;
 }
 
 .services
@@ -871,52 +894,6 @@ height: 100%!important;
     font-family: sans-serif;
 }
 
-  .baro{
-    font-size: larger;
-  }
-
-.btna{
-    padding: 20px;
-    border:  3px solid red;
-    background: black;
-    color: red; 
-    transition: all .3s;
-    border-left: 2px solid red;
-    border-right: 2px solid red;
-    font-family: fantasy;
-    text-decoration: none;
-    margin: 0 auto;
-    transition: all .3s;
-  }
-
-  
-.btna:hover{
-   color: black;
-   background-color: red;
-  }
-
-.phrasebas1, .phrasebas2, .phrasebas3, .phrasebas4{
-  padding: 20px;
-  background-color: red;
-  border: 1px solid black;
-  color: black;
-  font-family: fantasy;
-  display: none;
-  -webkit-clip-path: polygon(35% 0, 0 0, 0 46%, 0% 80%, 0 100%, 48% 100%, 80% 100%, 100% 100%, 100% 48%, 100% 0, 63% 0, 49% 17%);
-clip-path: polygon(35% 0, 0 0, 0 46%, 0% 80%, 0 100%, 48% 100%, 80% 100%, 100% 100%, 100% 48%, 100% 0, 63% 0, 49% 17%)
-}
-.phrasebas1{
-  -webkit-clip-path: polygon(3% 0, 0 0, 0 46%, 0% 80%, 0 100%, 48% 100%, 80% 100%, 100% 100%, 100% 48%, 100% 0, 21% 0, 11% 12%);
-clip-path: polygon(3% 0, 0 0, 0 46%, 0% 80%, 0 100%, 48% 100%, 80% 100%, 100% 100%, 100% 48%, 100% 0, 21% 0, 11% 12%)}
-.phrasebas2{-webkit-clip-path: polygon(77% 0, 0 0, 0 46%, 0% 80%, 0 100%, 48% 100%, 80% 100%, 100% 100%, 100% 48%, 100% 0, 99% 0, 88% 13%);
-  clip-path: polygon(77% 0, 0 0, 0 46%, 0% 80%, 0 100%, 48% 100%, 80% 100%, 100% 100%, 100% 48%, 100% 0, 99% 0, 88% 13%)
-}
-.phrasebas4{
-  -webkit-clip-path: polygon(28% 0, 0 0, 0 46%, 0% 80%, 0 100%, 48% 100%, 80% 100%, 100% 100%, 100% 48%, 100% 0, 48% 0, 38% 14%);
-clip-path: polygon(28% 0, 0 0, 0 46%, 0% 80%, 0 100%, 48% 100%, 80% 100%, 100% 100%, 100% 48%, 100% 0, 48% 0, 38% 14%)}
-.phrasebas3{
-  -webkit-clip-path: polygon(51% 0, 0 0, 0 46%, 0% 80%, 0 100%, 48% 100%, 80% 100%, 100% 100%, 100% 48%, 100% 0, 74% 0, 63% 12%);
-clip-path: polygon(51% 0, 0 0, 0 46%, 0% 80%, 0 100%, 48% 100%, 80% 100%, 100% 100%, 100% 48%, 100% 0, 74% 0, 63% 12%)}
 
 .conteur{
   background-color: black;
