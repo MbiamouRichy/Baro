@@ -843,12 +843,14 @@ height: 100%!important;
 
 .conteur{
   background-color: black;
-  padding: 30px;
+  padding: 50px 0px;
+  margin-top: 10px;
 }
 .conteur h2{
   color: red;
   font-size: 3em;
   -webkit-text-stroke: 2px red ;
+  text-align: center;
 }
 .containeur{
    display: flex;
@@ -861,6 +863,48 @@ height: 100%!important;
     width: 30%;
     height: 400px;
     margin: 10px;
+}
+.containeur .card .face{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.containeur .card .face.face1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform-origin: bottom;
+  background: url('../img/black-man-4699506_1920.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.containeur .card .face.face1 h3{
+  margin: 10px 0 0;
+  color: red;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bolder;
+}
+.containeur .card:hover .face.face1 {
+  transform: translateY(-100%) rotateX(90deg);
+  background: url('../img/black-man-4699506_1920.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.containeur .card .face.face2{
+  background: black;
+  display: table;
+  transform-origin: top;
+  transform: translateY(100%) rotateX(90deg);
+}
+.containeur .card:hover .face.face2{
+transform: translateY(0) rotateX(0deg);
+font-size: 16px;
+overflow: auto;
 }
 .profile{ 
   padding: 70px 10px 10px;
@@ -884,80 +928,39 @@ height: 100%!important;
       margin-top: 15px;
       color: black;
   }
-  
+  .profile:hover
+  {
+      box-shadow: 0 0 15px 5px rgba(153, 3, 3, 0.8);
+      cursor: pointer;
+      transition: 0.5s;
+  }  
   blockquote
-{      font-size: 16px;
-      line-height: 30px;
+{      font-size: 20px;
+      line-height: 20px;
+      background: transparent;
+      border: none;
   }
   blockquote::before
   {
       content: '\201C';
-      font-size: 50px;
+      font-size: 60px;
+      font-weight: bolder;
       color: black;
       position: relative;
-      line-height: 20px;
+      line-height: 15px;
       bottom: -15px;
       right: 5px;
   }
   blockquote::after
   {
       content: '\201D';
-      font-size: 50px;
-      color: #1c1c1d;
+      font-size: 60px;
+      font-weight: bolder;
+      color: black;
+      line-height: 15px;
       position: relative;
       bottom: -15px;
-      line-height: 10px;
       left: 5px;
-  }
-  .profile:hover
-  {
-      box-shadow: 0 0 15px 5px rgba(153, 3, 3, 0.8);
-      cursor: pointer;
-      transition: 0.5s;
-  }
-
-
-  .containeur .card .face{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-  }
-  .containeur .card .face.face1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    transform-origin: bottom;
-    background: url('../img/black-man-4699506_1920.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .containeur .card .face.face1 h3{
-    margin: 10px 0 0;
-    color: red;
-    text-align: center;
-    font-size: 1.5em;
-  }
-  .containeur .card:hover .face.face1 {
-    transform: translateY(-100%) rotateX(90deg);
-    background: url('../img/black-man-4699506_1920.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .containeur .card .face.face2{
-    background: black;
-    display: table;
-    padding: 30px;
-    transform-origin: top;
-    transform: translateY(100%) rotateX(90deg);
-  }
-  .containeur .card:hover .face.face2{
-  transform: translateY(0) rotateX(0deg);
-  font-size: 16px;
-  overflow: auto;
   }
   
 
