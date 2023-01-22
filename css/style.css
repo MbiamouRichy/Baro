@@ -838,25 +838,27 @@ height: 100%!important;
   border-color: black;
 }
 /*=======================================================
-      REALISATION
+      NOUS VOUS GARANTISSONS
 ========================================================*/
 
 .conteur{
   background-color: black;
-  padding: 50px 0px;
-  margin-top: 10px;
+  padding: 30px 10px;
+  margin-top: 20px;
 }
 .conteur h2{
   color: red;
   font-size: 3em;
   -webkit-text-stroke: 2px red ;
-  text-align: center;
+  text-transform: uppercase;
+  margin: 15px;
 }
 .containeur{
    display: flex;
    flex-direction: row;
    justify-content: center;
    align-self: center;
+   padding-top: 25px;
 }
 .containeur .card{
     position: relative;
@@ -962,23 +964,29 @@ overflow: auto;
       bottom: -15px;
       left: 5px;
   }
+ 
+/*=======================================================
+      REALISATION
+========================================================*/
   
 
-#services
+#realisation
 {
     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('../img/services.jpg');
     background-size: cover;
     background-position: center;
     color: red !important;
     background-attachment: fixed;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 0px;
+
 }
-#services h2
+#realisation h2
 {
  font-size: 3em;
- text-align: center;
  color: red;
+ text-transform: uppercase;
+ -webkit-text-stroke: 2px red;
+ -webkit-text-stroke-color: red;
 }
 
 .services
@@ -995,7 +1003,7 @@ overflow: auto;
     border: 1px solid red;
     border-radius: 50%;
 }
-#services p
+#realisation p
 {
     font-size: 14px;
     margin-top: 20px;
