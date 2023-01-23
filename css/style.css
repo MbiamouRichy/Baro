@@ -796,7 +796,7 @@ height: 100%!important;
     background-size: cover;
     border-radius: 200px;
     transform: rotate(10deg);
-    z-index: 3;
+    z-index: 2;
   }
 .bar3 {
     position: relative;
