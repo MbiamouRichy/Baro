@@ -64,11 +64,7 @@
           </article>
        </header>
 
-<!------####################### Boutton scroll top ###############################--------->
 
-<a class="gotopbtn" href="#"> <i class="fa fa-arrow-up"></i> </a>
-<!------------------------------------------------------------------------------------>
-  
 <!-----####################################### realisons "qui sommes nous" #####################################$$$$$$$$$$$$$$$$$$$$$ -->
 
 <article  class="container-fluid  article_QSN">
@@ -253,11 +249,7 @@
 <section class="slider1 cid-sDUQ75DYkp" id="slider1-3t">
     
   <div class="carousel slide"   id="sE0yPTKROA" data-ride="carousel"  data-interval="2000">
-      <ol class="carousel-indicators">
-          <li data-slide-to="0" class="active" data-target="#sE0yPTKROA"></li>
-          <li data-slide-to="1" data-target="#sE0yPTKROA"></li>
-          <li data-slide-to="2" data-target="#sE0yPTKROA"></li>
-      </ol>
+      
       <div class="carousel-inner">
           <div class="carousel-item slider-image item active">
                <div class="item-wrapper">
@@ -265,7 +257,7 @@
                    <img src="img/Capture.PNG" alt="image" class="carouselimage">
                    <p class="d-block">  
                     MBIAMOU grace a ton talent nous avons</p>
-                   <span>GABRIEL TIMAUTHE PRESIDENT FONDATEUR DE CHOCOCAM</span>
+                   <p> <b>JONATHAN YIMS</b> <small>DG.BRASSERIE DU CAMEROUN</small></p>
                  </div>   
                 </div>
           </div>
@@ -274,7 +266,7 @@
               <div> 
                 <img src="img/woman-868521_640.jpg" alt="image" class="carouselimage">
                   <p class="d-block">Si je sais developper c'est grace a lui</p> 
-                <span> JONATHAN YIMS DG.BRASSERIE DU CAMEROUN</span>
+                <p> <b>JONATHAN YIMS</b> <small>DG.BRASSERIE DU CAMEROUN</small></p>
                </div>                
               </div>
           </div>
@@ -283,7 +275,7 @@
               <div> 
                 <img src="img/woman-868521_640.jpg" alt="image" class="carouselimage">
                   <p class="d-block">Si je sais developper c'est grace a lui</p> 
-                <span> JONATHAN YIMS DG.BRASSERIE DU CAMEROUN</span>
+                <p> <b>JONATHAN YIMS</b> <small>DG.BRASSERIE DU CAMEROUN</small></p>
                </div>                
               </div>
           </div>
@@ -295,6 +287,11 @@
        <a class="carousel-control carousel-control-next" role="button" data-slide="next" style="color: red;" href="#sE0yPTKROA">
          <i class=" fas fa-chevron-right fa-2x"></i>  
        </a>
+       <ol class="carousel-indicators">
+        <li data-slide-to="0" class="active" data-target="#sE0yPTKROA"></li>
+        <li data-slide-to="1" data-target="#sE0yPTKROA"></li>
+        <li data-slide-to="2" data-target="#sE0yPTKROA"></li>
+    </ol>
   </div>
 </section>
 
@@ -365,7 +362,13 @@
   </div>
 </footer>
 
+<!------####################### Boutton scroll top ###############################--------->
 
+<a class="cd-top" href="#">
+  <i class="fas fa-angle-up"></i>
+ </a>
+<!------------------------------------------------------------------------------------>
+  
 
 <!-- scripts -->
 
@@ -426,13 +429,24 @@
     talents__item.classList.toggle('active');
   
   }
+  const nav = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+    if(window.scrollY > 100) {
+        nav.classList.add('scroll');
+    }
+    else{
+        nav.classList.remove('scroll');
+    }
+});
 
 </script>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/particles.js"></script>
 <script src="js/app.js"></script>
 <script src="js/adminlte.min.js"></script>
-
+<script src="js/own-menu.js"></script>
 </body>
 </html>

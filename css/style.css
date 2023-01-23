@@ -72,10 +72,11 @@ header .navbar {
 }
 
 header .navbar.scroll{
+  z-index: 9;
   position: fixed;
-  top: -30px;
+  top: -0px;
   left: 0;
-  right: 0;
+  background-color: red;
 }
 header .nav {
   padding: 0px;
@@ -784,7 +785,7 @@ height: 100%!important;
     border: 1px solid black;
   }
 .bar2 {
-  outline: none;
+   outline: none;
     position: relative;
     top: -685px;
     left: 540px;
@@ -1023,7 +1024,7 @@ overflow: auto;
 .carousel .carousel-inner{
   display: flex;
   align-self: center;
-  border: 1px solid red;
+  padding: 10px;
 }
 .carousel-inner .carousel-item{
   text-align: center;
@@ -1035,30 +1036,65 @@ overflow: auto;
   text-align: center;
   width: 100%;
 }
+.carousel-inner .carousel-item .item-wrapper img{
+  width: 150px;
+  height: 150px;
+}
+.carousel-indicators{
+  position: relative;
+  bottom: 0px;
+}
 /*=======================================================
       BTN GO TO TOP
 ========================================================*/
-  
-  .gotopbtn:hover{
-    color:red;
-    background-color: black;
-  }
-  .gotopbtn{
-  position: fixed;
-  width: 50px;
+.cd-top {
+  display: inline-block;
   height: 50px;
-  background: red;
-  bottom: 40px;
-  right: 50px;
+  z-index: 9;
+  width: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: black;
   border-radius: 50%;
-  text-decoration: none;
+  font-size: 26px;
+  color: red;
   text-align: center;
-  line-height: 50px;
-  color: black;
-  font-size: 22px;
-  z-index: 6;
+  line-height: 44px;
+  border: 2px solid black;
+  box-shadow: 0 0 15px black;
+  overflow: hidden;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
-
+.cd-top.cd-is-visible,
+.cd-top.cd-fade-out,
+.no-touch .cd-top:hover {
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  visibility: visible;
+  opacity: 0.5;
+}
+.cd-top.cd-fade-out {
+  opacity: 0.5;
+}
+.cd-top:hover {
+  background-color: red;
+  opacity: 1;
+  color: black;
+}
 .venez-avec-nous{
   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../img/promo.jpg');
   background-size: cover;
