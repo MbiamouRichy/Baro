@@ -620,6 +620,10 @@ header .nav-link:hover{
     -webkit-transform: rotate(8deg)!important;
    -khtml-transform: rotate(8deg)!important;
     -ms-transform: rotate(8deg)!important;
+    transition: all 0.3s ease-in-out;
+}
+header .nav-link:active{
+  background-color: rgba(0, 0, 0,0.8);
 }
 .header-style-2 .navbar-toggle{
   border: 0  !important;
@@ -781,13 +785,13 @@ height: 100%!important;
     background-repeat: no-repeat;
     background-size: cover;
     transform: rotate(-10deg);
-    z-index: 2;
+    z-index: 1;
     border: 1px solid black;
   }
 .bar2 {
    outline: none;
     position: relative;
-    top: -685px;
+    top: -645px;
     left: 540px;
     width: 270px;
     height: 280px;
@@ -796,18 +800,17 @@ height: 100%!important;
     background-size: cover;
     border-radius: 200px;
     transform: rotate(10deg);
-    z-index: 2;
+    z-index: 1;
   }
 .bar3 {
     position: relative;
-    top: -790px;
+    top: -760px;
     left: 440px;
     width: 500px;
     height: 190px;
     background-color: black;
     border-radius: 200px;
     transform: rotate(-120deg);
-    z-index: 1;
 }
 
 
