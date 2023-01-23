@@ -843,7 +843,7 @@ height: 100%!important;
 
 .conteur{
   background-color: black;
-  padding: 30px 10px;
+  padding: 60px 10px;
   margin-top: 20px;
 }
 .conteur h2{
@@ -851,20 +851,17 @@ height: 100%!important;
   font-size: 3em;
   -webkit-text-stroke: 2px red ;
   text-transform: uppercase;
-  margin: 15px;
 }
 .containeur{
    display: flex;
    flex-direction: row;
    justify-content: center;
    align-self: center;
-   padding-top: 25px;
 }
 .containeur .card{
     position: relative;
-    width: 30%;
-    height: 400px;
-    margin: 10px;
+    height: 350px;
+    margin: 5px;
 }
 .containeur .card .face{
   position: absolute;
@@ -1015,18 +1012,33 @@ overflow: auto;
     transition: 0.7s;
 }
 
-.venez-avec-nous{
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../img/promo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    text-align: center;
-    padding: 100px;
-    font-family: sans-serif;
+
+/*=======================================================
+      TESTIMONIAL
+========================================================*/
+#slider1-3t{
+  background-color: black;
+  padding: 40px 0;
 }
-
-
-
+.carousel .carousel-inner{
+  display: flex;
+  align-self: center;
+  border: 1px solid red;
+}
+.carousel-inner .carousel-item{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bolder;
+  color: red;
+}
+.carousel-inner .carousel-item .item-wrapper{
+  text-align: center;
+  width: 100%;
+}
+/*=======================================================
+      BTN GO TO TOP
+========================================================*/
+  
   .gotopbtn:hover{
     color:red;
     background-color: black;
@@ -1046,17 +1058,15 @@ overflow: auto;
   font-size: 22px;
   z-index: 6;
 }
-.lien_decouvrir{
-  border: 1px solid black;
-  color: black;
-  padding: 15px;
-  text-decoration: none;
-  margin:10px;
-  transition: all .3s;
-}
-.lien_decouvrir:hover{
-  background-color: black;
-  color: red;
+
+.venez-avec-nous{
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../img/promo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 100px;
+  font-family: sans-serif;
 }
 
 .y{height: 400px!important;
