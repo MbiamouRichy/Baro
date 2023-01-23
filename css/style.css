@@ -865,6 +865,7 @@ height: 100%!important;
    flex-direction: row;
    justify-content: center;
    align-self: center;
+   margin-top: 20px;
 }
 .containeur .card{
     position: relative;
@@ -910,8 +911,12 @@ height: 100%!important;
 }
 .containeur .card:hover .face.face2{
 transform: translateY(0) rotateX(0deg);
-font-size: 16px;
+font-size: 15px;
 overflow: auto;
+}
+.containeur .card:hover .face.face2 h3{
+  font-size: 15px;
+  font-weight: bolder;
 }
 .profile{ 
   padding: 70px 10px 10px;
@@ -1015,6 +1020,7 @@ overflow: auto;
     margin-top: 20px;
     color: red;
 }
+
 .services .col-md-3:hover{
     background: black;
     cursor: pointer;
@@ -1029,12 +1035,11 @@ overflow: auto;
 
 #slider1-3t{
   background-color: black;
-  padding: 40px 0;
+  padding: 20px;
 }
 .carousel .carousel-inner{
   display: flex;
   align-self: center;
-  padding: 10px;
 }
 .carousel-inner .carousel-item{
   text-align: center;
@@ -1084,7 +1089,7 @@ overflow: auto;
 }
 .venez-avec-nous span::before{
   content: "FLEURIR";
-  animation: change_text 8s infinite;
+  animation: change_text 6s infinite;
   transition: all 0.5s ease-out;
 }
 @keyframes change_text{
@@ -1134,162 +1139,84 @@ overflow: auto;
 ========================================================*/
 
 
-footer{background-color: rgba(110, 25,25);
+footer{
+  background-color: transparent;
   overflow-x: hidden;
-  margin-top: 20px;
+  padding-top: 40px;
+  font-size: 16px;
+  font-weight: bolder;
 }
-
+footer h6{
+  font-weight: bolder;
+  color: black;
+}
 .imagefooter{
   margin: 0 auto;
 }
 .p_footer{
-  margin: 20px;
+  color: black;
   font-family: fantasy;
 }
 .li{
   margin: 8px;
 }
-
-.footerinput:focus{background-color: white;}
+.footerinput:focus{
+  background-color: white;
+}
 .footerinput{
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
-  margin: 10px;
+  padding: 5px;
+  background-color: rgb(0, 0, 0);
+  margin: 5px;
   width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.7);
+  border: 1px solid rgb(0, 0, 0);
   transition: all 0.3s;
+}
+.footerinput::placeholder{
+  color: red;
 }
 .submit:hover{
   box-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.4);
-  background-color:rgba(170, 49, 49, 0.9)!important;
+  background-color:rgba(245, 0, 0, 0.9)!important;
+}
+footer ul, footer ol{
+  list-style: none;
 }
 .li-a{
   text-decoration: none!important;
-  color: red;
+  color: black;
   vertical-align: middle;
 }
-  .li-a:hover{
-  color: rgba(0, 0, 0, 0.7);
-  }
 
-.li-a::after{text-align: center;
+
+.li-a::after{
+  text-align: center;
   content:"";
   display: block;
   text-decoration:none;
   position : relative ;
   width:0%;
   height:3px;
-  background :rgb(17, 13, 13);
+  background :rgb(0,0,0);
   transition :width .3s ease-in-out}
 .li-a:hover::after{
   width:20%;
-  text-decoration-color: #f5f1f1;
-  }
-
-main#blur.active{
-  filter: blur(20px);
-  pointer-events: none;
-  user-select: none;
 }
-#talents__item.active{
-  top: 50%;
-  visibility:visible;
-    opacity:1;
-    transition: 0.5s;
+.li-a:hover{
+  color: rgb(0, 0, 0);
+}
+.li-a:active::after{
+  width:100%;
+  color: black;
+}
+footer .copy{
+  color: black;
+  padding: 10px;
 }
 
-#talents__item {
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1400px;
-    padding: 40px;
-    background-color: white;
-    box-shadow: 0 50px 30px rgba(0, 0, 0, 1);
-    display: flex;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-    flex-direction: column;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  .talents__item .etoile {
-    margin-left: 300px;
-    text-align: center;
-    width: 200px;
-  }
-  .talents__item .etoile span {
-    position: relative;
-    top: -15px;
-  }
-  .talents__item .items {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 80px;
-    margin-right: 50px;
-  }
-  .talents__item .items .img {
-    position: relative;
-    display: flex;
-  }
-  .talents__item .items .img .tal1 {
-    position: relative;
-    background: url("../img/talent-profile-1.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 250px;
-    height: 400px;
-    border-radius: 100px;
-    left: 50px;
-    z-index: -1;
-  }
-  .talents__item .items .img .tal2 {
-    position: relative;
-    background: url("../img/talent-profile-2.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 500px;
-    border-radius: 100px;
-    z-index: 1;
-  }
-  .talents__item .items .img .tal3 {
-    position: relative;
-    background: url("../img/talent-profile-3.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 250px;
-    height: 400px;
-    border-radius: 100px;
-    right: 50px;
-    z-index: -1;
-  }
-  .talents__item .items p {
-    text-align: justify;
-    width: 500px;
-  }
-  .talents__item .items .btn {
-    width: 330px;
-    display: flex;
-    background-color: #ffd905;
-    border-radius: 50px;
-    text-align: justify;
-    justify-content: space-between;
-  }
-  .talents__item .items .btn :nth-child(1) {
-    width: 30%;
-    font-size: 30px;
-    padding: 8px;
-  }
-  .talents__item .items .btn :nth-child(2) {
-    width: 60%;
-    padding: 8px;
-    font-size: 15px;
-  }
-
-
+.copy .fab{
+  font-size: 30px;
+  color: black;
+}
   
 /*=======================================================
       BTN GO TO TOP
