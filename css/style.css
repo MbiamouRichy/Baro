@@ -880,17 +880,25 @@ height: 100%!important;
   height: 100%;
   transition: 0.5s;
 }
-.containeur .card .face.face1{
+.containeur .card .face.face1,.containeur .card .face.img1,.containeur .card .face.img2{
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
   transform-origin: bottom;
-  background: url('../img/black-man-4699506_1920.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
-.containeur .card .face.face1 h3{
+.face.face1{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url('../img/black-man-4699506_1920.jpg');
+}
+.img1{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url('../img/talent-profile-2.jpg');
+}
+.img2{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url('../img/Capture.PNG');
+}
+.containeur .card .face.face1 h3,  .card .face.img1 h3,  .card .face.img2 h3{
   margin: 10px 0 0;
   color: red;
   text-align: center;
@@ -900,11 +908,9 @@ height: 100%!important;
                0 0 10px rgb(0, 0, 0),
                0 0 10px rgb(0, 0, 0);
 }
-.containeur .card:hover .face.face1 {
+.containeur .card:hover .face.face1,.containeur .card:hover .face.img1,.containeur .card:hover .face.img2 {
   transform: translateY(-100%) rotateX(90deg);
-  background: url('../img/black-man-4699506_1920.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+ 
 }
 .containeur .card .face.face2{
   background: black;
