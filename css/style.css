@@ -215,7 +215,7 @@ header .navbar li a:hover:before {
 }
 .ownmenu .nav .dropdown-menu li a span {
   color: #fff;
-  font-weight: normal;
+  font-weight: bolder;
   margin-left: 5px;
   font-size: 8px;
   height: 15px;
@@ -495,7 +495,7 @@ header.full-head .ownmenu .dropdown.megamenu .dropdown-menu {
 
 }
 .head-info li p {
-  font-weight: 400;
+  font-weight: bolder;
   font-size: 12px;
   line-height: 33px;
   display: table-cell;
@@ -896,6 +896,9 @@ height: 100%!important;
   text-align: center;
   font-size: 2em;
   font-weight: bolder;
+  text-shadow: 0 0 20px rgb(0, 0, 0),
+               0 0 10px rgb(0, 0, 0),
+               0 0 10px rgb(0, 0, 0);
 }
 .containeur .card:hover .face.face1 {
   transform: translateY(-100%) rotateX(90deg);
@@ -1154,6 +1157,7 @@ footer h6{
   margin: 0 auto;
 }
 .p_footer{
+  font-weight: 400;
   color: black;
   font-family: fantasy;
 }
