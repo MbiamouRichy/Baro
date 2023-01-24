@@ -1,4 +1,11 @@
-@media (min-width: 1200px) and (max-width: 4440px) {
+
+@media screen and (max-width: 767px) {
+    .head-info {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 4440px) {
     .head-info li p {
         font-weight: bolder;
         font-size: 15px;
@@ -24,7 +31,7 @@
     }
 
 }
-@media (min-width: 992px) and (max-width: 1013px) {
+@media screen and (min-width: 992px) and (max-width: 1013px) {
     .bar2{
         top: -505px;
         left: 480px;
@@ -45,7 +52,7 @@
       transform: rotate(-130deg);
     }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     .bar2{
         top: -505px;
         left: 480px;
@@ -84,10 +91,5 @@
     blockquote{
         padding: 0;
         margin: 5px 0px 0px 0px;
-    }
-}
-@media (min-width: 376px) and (max-width: 426px){
-    p{
-        font-size: 25px;
     }
 }

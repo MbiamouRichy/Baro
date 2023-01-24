@@ -1190,8 +1190,6 @@ footer ul, footer ol{
   color: black;
   vertical-align: middle;
 }
-
-
 .li-a::after{
   text-align: center;
   content:"";
