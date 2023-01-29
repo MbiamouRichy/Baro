@@ -203,6 +203,7 @@ header .navbar li a:hover:before {
   z-index: 3;
 
 }
+
 .ownmenu {
   float: left;
 }
@@ -292,18 +293,7 @@ header.full-head {
   z-index: 3;
 
 }
-header.full-head .sticky {
-  padding: 0 50px;
-}
-header.white-header .logo {
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-}
-header.white-header .nav-right {
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
-}
-header.white-header .navbar li a {
-  color: #fff;
-}
+
 header.full-head .ownmenu .dropdown.megamenu .dropdown-menu {
   padding: 0px;
 }
